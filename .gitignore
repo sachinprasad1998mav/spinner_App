@@ -1,0 +1,37 @@
+# deps & builds
+node_modules/
+dist/
+
+# env & tokens
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+.npmrc
+.yarnrc.yml
+.pnpm-store/
+
+# keep sample env files for teammates
+!.env.example
+!.env*.example
+!.env.sample
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# editors & OS
+.vscode/
+.idea/
+.DS_Store
+
+# hosting configs (often contain IDs)
+.vercel/
+.netlify/
+
+# tests (when you add them later)
+coverage/
