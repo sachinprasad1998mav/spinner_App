@@ -4,6 +4,7 @@ A fun little React app where users can log in and spin a reward wheel.
 Each spin gives a random reward, and all your spins are shown on the rewards page.
 
 Features
+	•	Enter a 9 digit mobile number.
 	•	Login with a mock OTP (123456)
 	•	Animated spin-the-wheel
 	•	Rewards history with timestamps
