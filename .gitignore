@@ -1,8 +1,18 @@
-# deps & builds
+# dependencies
 node_modules/
-dist/
+.pnp.cjs
+.pnp.loader.mjs
 
-# env & tokens
+# builds & caches
+dist/
+.vite/
+coverage/
+*.tsbuildinfo
+.turbo/
+.eslintcache
+.prettier-cache
+
+# env & tokens (never commit secrets)
 .env
 .env.local
 .env.*.local
@@ -13,10 +23,11 @@ dist/
 .yarnrc.yml
 .pnpm-store/
 
-# keep sample env files for teammates
-!.env.example
-!.env*.example
-!.env.sample
+# editor & OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
 # logs
 *.log
@@ -24,14 +35,6 @@ npm-debug.log*
 yarn-debug.log*
 pnpm-debug.log*
 
-# editors & OS
-.vscode/
-.idea/
-.DS_Store
-
-# hosting configs (often contain IDs)
+# hosting/platform (may contain IDs)
 .vercel/
 .netlify/
-
-# tests (when you add them later)
-coverage/
